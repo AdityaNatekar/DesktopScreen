@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>V0.png</file>
+        <file>V3.png</file>
+        <file>V1.png</file>
+        <file>V4.png</file>
+        <file>camera.png</file>
+        <file>control-panel.png</file>
+        <file>on-off-button (1).png</file>
+        <file>reboot.png</file>
+        <file>slot-machine.png</file>
+        <file>systeminfo.png</file>
+        <file>usb.png</file>
+        <file>terminal.png</file>
+        <file>font.png</file>
+    </qresource>
+</RCC>

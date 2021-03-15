@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.952, y1:0.0284091, x2:0, y2:0.982909, stop:0 rgba(53, 94, 255, 255), stop:0.792271 rgba(121, 100, 195, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>190</y>
+      <width>801</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>J1-MX6 Demo Software Selection</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>321</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: Transparent;</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="page_Network">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(211, 215, 207);</string>
+     </property>
+     <widget class="QLabel" name="label_ip">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>IP Address:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ip_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Subnet Mask:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ip_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Default Gateway:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_IPValue">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>40</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Subnetvalue">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>90</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_GatewayValue">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>140</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonclose">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>190</y>
+        <width>89</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(186, 189, 182);
+border-radius:5px;</string>
+      </property>
+      <property name="text">
+       <string>Close</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(46, 52, 54);
+color:rgb(255,255,255);</string>
+   </property>
+   <widget class="QMenu" name="menuApplications">
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Applications</string>
+    </property>
+    <property name="separatorsCollapsible">
+     <bool>true</bool>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionSLOT"/>
+    <addaction name="separator"/>
+    <addaction name="actionUSB_IO"/>
+    <addaction name="separator"/>
+    <addaction name="actionCAMERA"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionJ1_TOOLS"/>
+    <addaction name="separator"/>
+    <addaction name="actionFonts"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuExit">
+    <property name="title">
+     <string>Exit</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionTerminal"/>
+    <addaction name="separator"/>
+    <addaction name="actionReboot"/>
+    <addaction name="actionPowerOff"/>
+   </widget>
+   <widget class="QMenu" name="menuNetwork">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>156</y>
+      <width>265</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Network</string>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/new/prefix1/systeminfo.png</normaloff>:/new/prefix1/systeminfo.png</iconset>
+    </property>
+    <addaction name="actionNetwork"/>
+   </widget>
+   <addaction name="menuNetwork"/>
+   <addaction name="menuApplications"/>
+   <addaction name="menuExit"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(238, 238, 236)</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSLOT"/>
+   <addaction name="separator"/>
+   <addaction name="actionUSB_IO"/>
+   <addaction name="separator"/>
+   <addaction name="actionJ1_TOOLS"/>
+   <addaction name="separator"/>
+   <addaction name="actionCAMERA"/>
+   <addaction name="separator"/>
+   <addaction name="actionFonts"/>
+  </widget>
+  <action name="actionSLOT">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/prefix1/slot-machine.png</normaloff>:/new/prefix1/slot-machine.png</iconset>
+   </property>
+   <property name="text">
+    <string>Slot</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionUSB_IO">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/prefix1/usb.png</normaloff>:/new/prefix1/usb.png</iconset>
+   </property>
+   <property name="text">
+    <string>Usb I/O</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionCAMERA">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/prefix1/camera.png</normaloff>:/new/prefix1/camera.png</iconset>
+   </property>
+   <property name="text">
+    <string>Camera</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionJ1_TOOLS">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/prefix1/control-panel.png</normaloff>:/new/prefix1/control-panel.png</iconset>
+   </property>
+   <property name="text">
+    <string>J1 Tools</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sans Serif</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionEXIT">
+   <property name="text">
+    <string>EXIT</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionTerminal">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/prefix1/terminal.png</normaloff>:/new/prefix1/terminal.png</iconset>
+   </property>
+   <property name="text">
+    <string>Terminal</string>
+   </property>
+   <property name="toolTip">
+    <string>TERMINAL</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionReboot">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/prefix1/reboot.png</normaloff>:/new/prefix1/reboot.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reboot</string>
+   </property>
+   <property name="toolTip">
+    <string>REBOOT</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionPowerOff">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/prefix1/on-off-button (1).png</normaloff>:/new/prefix1/on-off-button (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>PowerOff</string>
+   </property>
+   <property name="toolTip">
+    <string>POWEROFF</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionNetwork">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/prefix1/systeminfo.png</normaloff>:/new/prefix1/systeminfo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Network</string>
+   </property>
+  </action>
+  <action name="actionFonts">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/new/prefix1/font.png</normaloff>:/new/prefix1/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fonts</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sans Serif</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
